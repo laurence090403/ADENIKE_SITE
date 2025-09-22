@@ -1,0 +1,180 @@
+.why-section {
+  background-color: #f4c542; /* fond jaune */
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Bloc du haut */
+.why-header {
+  background-color: #5b4a2f; /* marron foncé */
+  color: white;
+  padding: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+
+}
+
+.why-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+
+
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.why-header p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.btn-more {
+  background-color: #e53935; /* bouton rouge */
+  border: none;
+
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #c62828;
+}
+
+/* Bloc du bas */
+.why-bottom {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+/* Grille images */
+.why-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  flex: 1;
+}
+
+.why-images img {
+  width: 100%;
+  height: 170px;        /* <-- même hauteur pour toutes les images */
+  object-fit: cover;    /* recadrage propre */
+  border-radius: 4px;   /* petit arrondi optionnel */
+}
+
+
+/* Texte */
+.why-text {
+  flex: 1;
+  color: #4a2f0c;
+}
+
+.why-text h3 {
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 15px;
+}
+
+.why-text p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.projectsie {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  font-size: 13px;
+
+  flex-direction: column;
+}
+
+.projectsiek {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+}
+
+.projectsik {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsik h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  margin-bottom: 40px;
+
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  font-weight: 550; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 0;
+}
+@media (max-width: 768px) {
+  .projectsik h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 15px;
+  margin-bottom: 40px;
+
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  font-weight: 550; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 2;
+}
+.projectsie {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  font-size: 13px;
+
+  flex-direction: column;
+}
+.projectsiek {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  font-size: 13px;
+
+  flex-direction: column;
+}
+.why-section {
+  background-color: #f4c542; /* fond jaune */
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.why-header {
+  background-color: #5b4a2f; /* marron foncé */
+  color: white;
+  padding: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 10px;
+
+}
+.why-bottom {
+  display: none;
+}
+
+}

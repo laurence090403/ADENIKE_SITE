@@ -1,0 +1,204 @@
+.about-sect {
+  background: #fcdf6a; /* jaune-orangé */
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.about-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 50px;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch; /* Changé de flex-start à stretch */
+  min-height: 60vh; /* Ajouté pour occuper toute la hauteur de l'écran */
+}
+
+/* Texte à gauche */
+.about-text {
+  flex: 1 1 280px;
+  max-width: 350px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+  border-left: 5px solid white;
+  
+  /* Propriétés pour l'alignement vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px; /* Espace entre la bordure et le texte */
+  margin: auto 0; /* Centrage vertical */
+}
+
+.highlight {
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Grille à droite */
+.about-grid {
+  flex: 2 1 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  align-content: center; /* Ajouté pour centrer verticalement le contenu de la grille */
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre le contenu à l'intérieur des cartes */
+  align-items: center;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-icon {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 1px;
+}
+
+.about-card h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.about-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fefefe;
+}
+
+/* ✅ Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+}
+.projects-section {
+  padding: 60px 20px;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+.projects-header {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  color: #333;
+  font-family: 'Bebas Neue', sans-serif;
+
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+
+.project-imaa{
+      padding-left: 20px;
+  padding-right: 20px;
+}
+.project-card img {
+  width: 95%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding-left: 20px;
+}
+
+.project-content h3 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #222;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f27c0a; /* orange comme sur ton image */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  color: #d2691e;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+     padding-left: 0px;
+  padding-right: 0px;
+  }
+
+
+  .projects-header {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}

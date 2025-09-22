@@ -1,0 +1,70 @@
+.stats-section {
+  padding: 4rem 2rem;
+  background-color: #fcdf6a; /* Fond gris très clair */
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 2rem 0rem;
+  background-color: #ffffff; /* Fond blanc */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fcdf6a; /* Bleu foncé comme sur l'image */
+  margin-bottom: 0.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280; /* Texte gris */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablettes */
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-section {
+    padding: 2rem 1rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1.5rem 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}

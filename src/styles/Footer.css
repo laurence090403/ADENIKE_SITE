@@ -1,0 +1,74 @@
+.adenike-footer {
+  background-color: #FDF3DF;
+  padding: 40px 20px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.logo-images{
+  width: 155px;
+  height: 55px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto 30px;
+
+}
+
+.logosi{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 150px;
+border-right: 1px solid #000000;
+}
+
+.footer-section h4 {
+  margin: 0 0 15px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-section h4:hover {
+  color: #fcdf6a;
+}
+
+
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #000000;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    min-width: 100%;
+  }
+  
+}

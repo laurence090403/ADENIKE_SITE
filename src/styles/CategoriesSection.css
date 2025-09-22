@@ -1,0 +1,164 @@
+.categories-section {
+  padding: 40px 25px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* === Conteneur des onglets avec défilement horizontal === */
+.categories-tabs-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
+}
+
+.categories-tabs-container::-webkit-scrollbar {
+  display: none; /* Masquer la scrollbar tout en permettant le défilement */
+}
+
+/* === Onglets catégories === */
+.categories-tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  min-width: max-content; /* Permet aux onglets de dépasser la largeur de l'écran */
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  padding: 15px 8px;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  flex-shrink: 0; /* Empêche le rétrécissement des onglets */
+}
+
+.tab-btn.active {
+  color: #d29a2c; /* orange doré */
+  font-weight: 600;
+}
+
+.tab-btn.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #d29a2c;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+/* === Grille Produits === */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes par défaut */
+  gap: 25px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 4px;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.product-card .productimage {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablettes en mode paysage (1024px et moins) */
+@media screen and (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px;
+  }
+}
+
+/* Tablettes en mode portrait (768px et moins) */
+@media screen and (max-width: 768px) {
+  .categories-section {
+    padding: 30px 15px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 15px;
+  }
+  
+  .product-card {
+    padding: 12px;
+  }
+  
+  .product-card .productimage {
+    height: 110px;
+  }
+  
+  .tab-btn {
+    font-size: 12px;
+    padding: 12px 6px;
+  }
+}
+
+/* Grands smartphones (480px et moins) */
+@media screen and (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 12px;
+  }
+  
+  .product-card .productimage {
+    height: 100px;
+  }
+  
+  .product-card p {
+    font-size: 13px;
+  }
+  
+  .tab-btn {
+    font-size: 11px;
+    padding: 10px 5px;
+  }
+}
+
+/* Petits smartphones (360px et moins) */
+@media screen and (max-width: 360px) {
+  .products-grid {
+    grid-template-columns: 1fr; /* 1 colonne */
+    gap: 10px;
+  }
+  
+  .categories-section {
+    padding: 20px 10px;
+  }
+  
+  .tab-btn {
+    font-size: 10px;
+    padding: 8px 4px;
+  }
+}

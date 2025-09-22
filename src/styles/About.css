@@ -1,0 +1,473 @@
+/* Conteneur pour Header et Hero partageant le même background */
+.header-hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Ajustez selon vos besoins */
+  overflow: hidden;
+}
+
+/* Image de fond partagée */
+.shared-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.shared-background .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shared-background .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Ajustez l'opacité ici */
+  z-index: 2;
+}
+
+/* Ajustements pour le Header */
+.header-hero-wrapper header {
+  position: relative;
+  z-index: 9999;
+  background-color: transparent; /* Assurez-vous que le header est transparent */
+}
+
+/* Section Hero */
+.hero-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vh - 150px);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-decoration: underline;
+  text-decoration-color: #facc15; 
+  text-underline-offset: 20px;
+  text-decoration-thickness: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero-contents {
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+} 
+
+.hero-titles {
+  font-size: 5.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} 
+
+.projectsi {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsi h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 35px;
+  font-weight: 550; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 0;
+}
+
+.projectsi-subtitle {
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 5px;
+} 
+
+.lefright {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  flex-wrap: wrap; /* Permet l'empilement sur mobile */
+}
+
+.left h2 {
+  font-size: 2em;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 0%;
+}
+
+.left {
+  width: 32%;
+  font-size: 0.8em;
+  margin-right: 3em;
+}
+
+.right {
+  width: 35%;
+}
+
+.enhaut {
+  width: 430px;
+  height: 320px;
+  max-width: 100%; /* Assure que l'image ne dépasse pas son conteneur */
+  height: auto; /* Maintient les proportions */
+}
+
+.jaune {
+  background-color: #fcdf6a; /* Couleur jaune pour la section valeurs */
+  padding-top: 40px ;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.values-section{
+  background-color: #fcdf6a; /* Couleur jaune pour la section valeurs */
+
+
+}
+.jaune h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 5px;
+}
+/* Styles pour le conteneur vidéo */
+.video-container {
+    background-color: #fcdf6a;
+  position: relative;
+  width: 50%;
+  max-width: 350px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Placeholder pour la vidéo */
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcdf6a;
+  color: #333;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #facc15;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive pour la vidéo */
+@media (max-width: 768px) {
+  .video-container {
+    max-width: 50%;
+  }
+}
+.jaune p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+  line-height: 1.2;
+  font-size: 0.8rem;
+
+}
+
+/* Section Fast Supply */
+.fast-supply-section {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+}
+
+.supply-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.supply-container h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.supply-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #facc15;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fast-supply-section {
+    padding: 60px 15px;
+  }
+  
+  .supply-container h2 {
+    font-size: 2.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    padding: 25px 15px;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-titles {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-titles {
+    font-size: 3.5rem;
+  }
+  
+  .left, .right {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-hero-wrapper,
+  .hero-sections {
+    height: auto;
+    min-height: 60vh;
+  }
+  
+  .hero-titles {
+    font-size: 2.8rem;
+    text-underline-offset: 15px;
+  }
+  
+  .lefright {
+    flex-direction: column-reverse;
+  }
+  
+  .left, .right {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+  
+  .enhaut {
+    width: 100%;
+  }
+  
+  .projectsi h2 {
+    font-size: 28px;
+  }
+  
+  .jaune h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-titles {
+    font-size: 2.2rem;
+  }
+  
+  .left, .right {
+    width: 95%;
+  }
+  
+  .projectsi h2 {
+    font-size: 24px;
+  }
+  
+  /* .jaune {
+    padding: 30px 15px;
+  } */
+  
+  .jaune h1 {
+    font-size: 1.8rem;
+  }
+  
+  .left h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+/* SECTION 1 – Avantages */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  /* background-color: #facc15; */
+
+}
+.feature {
+  max-width: 160px;
+}
+.feature .icon {
+  font-size: 40px;
+  color: #fff;        /* couleur blanche comme sur votre design */
+  margin-bottom: 4px;
+}
+.feature h3 {
+  margin: 2px 0;
+  font-weight: 600;
+  font-size: 1rem;
+
+  color: #fff;        /* couleur blanche comme sur votre design */
+
+}
+.feature p {
+  font-size: 0.7rem;
+  color: #1b1b1b;
+}
+
+
+/* SECTION 2 – Notre équipe */
+.team {
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+.team h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.member {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+  display: block;
+}
+.member h4 {
+  margin: 12px 0 4px;
+  font-size: 1rem;
+  color: #000;
+}
+.member p {
+  margin: 0 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.member2 {
+  display: flex;
+  flex-direction: column;   /* pour garder h4 au-dessus du p */
+  justify-content: center;  /* centre verticalement */
+  align-items: center;      /* centre horizontalement */
+}
