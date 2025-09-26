@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "../styles/Contact.css";
 import Footer from "../components/Footer";
 
@@ -100,19 +101,29 @@ const [activeTab, setActiveTab] = useState("benin");
 
         <div className="address-info">
           <h3>NOTRE ADRESSE</h3>
-          <p>15 Avenue Félix d’Herelle, 75016 PARIS</p>
+          <p>  <strong>Bénin: </strong> Porto-Novo, Capitale, Quartier Cinquantenaire</p>
+          <p> <strong>Etats Unis: </strong> US,TORONTO</p>
 
-          <h4>PARKING</h4>
-          <ul>
-            <li>Voiture et deux roues : 90 places</li>
-            <li>Parking à vélo et trottinette</li>
-            <li>Accès PMR</li>
-          </ul>
+          <h4>MEDIA</h4>
+           <div className="social-icons">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <FaFacebook />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <FaTwitter />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <FaInstagram />
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin />
+      </a>
+    </div>
 
-          <h4>ACCÈS AU CLUB</h4>
+          <h4>Contact</h4>
           <p>
-            <strong>Métro :</strong> Ligne 9 – Porte de St Cloud<br />
-            <strong>Bus :</strong> 175, 189, 62, 72, PC
+            <strong>Porto Novo :</strong> +229 0156 7236 3247<br />
+            <strong>TORONTO :</strong> +(1) 01 484 739 503
           </p>
         </div>
       </section>

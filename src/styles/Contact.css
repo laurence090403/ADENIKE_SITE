@@ -136,6 +136,25 @@ body {
 
 }
 
+/* SocialIcons.css */
+.social-icons {
+  display: flex;             /* aligne en ligne */
+  margin-top: 2px;
+  gap: 10px;                 /* espace entre les icônes */
+ 
+}
+
+.social-icons a {
+  color: #333;               /* couleur des icônes */
+  font-size: 1.5rem;           /* taille des icônes */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f2c262;            /* couleur au survol (exemple) */
+}
+
+
 /* === Responsive ajustements === */
 @media (max-width: 768px) {
   .schedule {
