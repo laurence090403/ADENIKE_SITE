@@ -1,0 +1,36 @@
+.project-gallery {
+  max-width: 1000px;     /* largeur max du conteneur */
+  margin: 0 auto;        /* centre horizontalement */
+  padding: 3rem 1rem;  /* marges intérieure haut/bas & côtés */
+}
+
+.project-gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+
+  margin-bottom: 2rem;
+}
+
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2.5rem;            /* espace entre les images */
+}
+
+.project-gallery-grid figure {
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   margin: 0;  
+}
+
+.project-gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-gallery-grid img:hover {
+  transform: scale(1.05);
+}

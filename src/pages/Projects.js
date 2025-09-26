@@ -209,7 +209,7 @@ const projects = [
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href="/" className="read-more">
+              <a href="/proj1" className="read-more">
                 Continue reading →
               </a>
             </div>

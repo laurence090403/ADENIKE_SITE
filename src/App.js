@@ -5,6 +5,8 @@ import Produits from "./pages/Products";
 import Projets from "./pages/Projects";
 import Mission from "./pages/Mission";
 import Contact from "./pages/Contact";
+import Project1 from "./pages/projectsres";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/projets" element={<Projets />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/proj1" element={<Project1 />} />
       </Routes>
     </Router>
   );

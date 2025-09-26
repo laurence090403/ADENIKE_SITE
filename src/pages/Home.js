@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import "../styles/Home.css";
 import { useNavigate } from "react-router-dom";
 import StatsSection from "./StatsSection";
+import { Link} from "react-router-dom";
+
 
 export default function Home() {
   const navigate = useNavigate();
@@ -165,7 +167,7 @@ export default function Home() {
         {/* Bloc texte */}
         <div className="project-info">
           <h3>VIETNAMESE MARTYRS PARISH</h3>
-          <a href="#" className="view-link">
+          <a href="/proj1" className="view-link">
             View Project →
           </a>
         </div>
@@ -184,9 +186,9 @@ export default function Home() {
         {/* Bloc texte */}
         <div className="project-info">
           <h3>VIETNAMESE MARTYRS PARISH</h3>
-          <a href="#" className="view-link">
+          <Link to="/proj1" className="view-link">
             View Project →
-          </a>
+          </Link>
         </div>
       </div>
     </section>
